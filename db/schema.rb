@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141225121315) do
+ActiveRecord::Schema.define(version: 20141229122356) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -62,11 +62,22 @@ ActiveRecord::Schema.define(version: 20141225121315) do
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
 
+  create_table "photos", force: true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  add_index "photos", ["user_id"], name: "index_photos_on_user_id"
+
   create_table "pins", force: true do |t|
     t.string   "title"
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.string   "index"
   end
 
   create_table "users", force: true do |t|

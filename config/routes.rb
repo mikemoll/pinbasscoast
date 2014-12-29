@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :photos
+
   get 'landings/index'
   get "about" => "landings#about"
 
