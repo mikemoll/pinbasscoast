@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'landings/index'
+  get "about" => "landings#about"
 
   resources :pins
 
