@@ -4,13 +4,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-$body-bg:                                                   #ecf0f1;
+$body-bg:                                                   #373F47;
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                                        45px;
 $navbar-default-bg:                          white;
-$navbar-default-brand-color:      #c0392b;
+$navbar-default-brand-color:      #D36135;
 $brand-primary:                                    #c0392b;
-$jumbotron-bg:                                         white;
+$jumbotron-bg:                           white;
 
 @import 'bootstrap';
 
@@ -20,4 +20,15 @@ $jumbotron-bg:                                         white;
 
 .navbar-brand {
      font-weight: bold;
+}
+
+body {
+    background-image: url("http://www.dubselekta.com/wp-content/uploads/2014/07/zebra.jpg");
+    background-color: #cccccc;
+}
+
+.jumbotron {
+
+	background-color: white;
+	 opacity: 0.87;
 }
